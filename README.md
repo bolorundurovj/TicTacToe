@@ -1,6 +1,6 @@
 # TicTacToe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+This project is live at [Angular TicTacToe](https://tranquil-refuge-48297.herokuapp.com/) version 1.0.0.
 
 ## Development server
 
