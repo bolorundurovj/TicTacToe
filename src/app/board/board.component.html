@@ -1,4 +1,5 @@
-<div class="flex">
+<div class="container">
+  <h3>Players: <span>X <span style="background: #75E6DA; color: #75E6DA;">00</span></span>, <span>O <span style="background: #189AB4; color: #189AB4;">00</span></span></h3>
   <h1>Current Player: {{ player }}</h1>
 
   <button (click)="newGame()">Start New Game</button>
@@ -11,7 +12,7 @@
     </app-square>
 
     <p *ngIf="winner" class="stack">
-      Game Over !!
+      <span>Game Over !!</span>
     </p>
   </main>
 
