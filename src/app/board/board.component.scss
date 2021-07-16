@@ -2,24 +2,27 @@ main {
   display: grid;
   grid-template-columns: 200px 200px 200px;
   gap: 0px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 app-square {
-  border: 1px gray solid;
+  // border: 1px gray solid;
+  border: none;
   height: 200px;
 }
 
 button {
   border-radius: 7px;
   padding: 0.5rem;
-  margin: 1rem;
+  margin: 1rem 0;
   background-color: cornflowerblue;
   border-style: none;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -31,7 +34,23 @@ p.stack {
   position: absolute;
   opacity: 50%;
   background-color: darkolivegreen;
-  text-align: center;
   font-size: larger;
   font-weight: bolder;
+  margin-top: 0;
+
+  span{
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    font-size: xx-large;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 }
+
+.container{
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+

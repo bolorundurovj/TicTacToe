@@ -1,15 +1,19 @@
-<h1>Current Player: {{ player }}</h1>
+<div class="container">
+  <h3>Players: <span>X <span style="background: #75E6DA; color: #75E6DA;">00</span></span>, <span>O <span style="background: #189AB4; color: #189AB4;">00</span></span></h3>
+  <h1>Current Player: {{ player }}</h1>
 
-<button (click)="newGame()">Start New Game</button>
+  <button (click)="newGame()">Start New Game</button>
 
-<h2 *ngIf="winner"> Player {{winner}} won the game</h2>
+  <h2 *ngIf="winner"> Player {{winner}} won the game</h2>
 
-<main>
-  <app-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
+  <main>
+    <app-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
 
-  </app-square>
+    </app-square>
 
-  <p *ngIf="winner" class="stack">
-    Game Over !!
-  </p>
-</main>
+    <p *ngIf="winner" class="stack">
+      <span>Game Over !!</span>
+    </p>
+  </main>
+
+</div>
